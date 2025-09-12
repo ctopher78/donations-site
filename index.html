@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donate — Montessori Collective</title>
+  <meta name="description" content="Support Montessori Collective." />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0}
+    main{max-width:760px;margin:4rem auto;padding:0 1rem}
+    .card{padding:1.25rem;border:1px solid #e5e7eb;border-radius:12px}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Support Montessori Collective</h1>
+    <div class="card">
+      <div id="MC-donation-form"></div>
+    </div>
+  </main>
+
+  <!-- Mightycause embed -->
+  <script src="https://downloads.mightycause.com/widgets/v1/embed.js"></script>
+  <script>
+    window.onload = function () {
+      window.MCForms.createEmbedForm({
+        elementID: "MC-donation-form",
+        url: "https://www.coloradogives.org/forms/Montessori-Collective?embed_short_token=0ccg5f&embed=embeddable_form"
+      });
+    };
+  </script>
+
+  <noscript>
+    <p style="text-align:center">JavaScript is required for the donation form.
+      You can donate directly at
+      <a href="https://www.coloradogives.org/forms/Montessori-Collective?embed_short_token=0ccg5f&embed=embeddable_form">
+        this link
+      </a>.
+    </p>
+  </noscript>
+</body>
+</html>
