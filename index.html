@@ -79,12 +79,14 @@
     }
 
     .primary-nav {
-      margin-left: auto;
       display: flex;
       align-items: center;
       gap: 1.5rem;
       font-family: 'Livvic', sans-serif;
       font-size: 1rem;
+      flex: 1;
+      justify-content: flex-start;
+      margin-left: clamp(2rem, 6vw, 4rem);
     }
 
     .primary-nav a {
@@ -116,7 +118,7 @@
     }
 
     .primary-nav .nav-login {
-      margin-left: 0.5rem;
+      margin-left: auto;
       padding: 0.5rem 0.75rem;
       border: 1px solid var(--color-border);
       border-radius: 999px;
@@ -273,6 +275,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 1rem;
+        margin-left: 0;
       }
 
       .primary-nav .nav-login {
@@ -304,13 +307,14 @@
     <div class="container nav-content">
       <a class="brand" href="https://www.montessori-collective.org/">
         <img src="https://www.montessori-collective.org/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5Ijoia3N5cDgzZ3E1a3loY3JnMDdxbXhybDJndGwwNSIsImRvbWFpbiI6Ind3dy5tb250ZXNzb3JpLWNvbGxlY3RpdmUub3JnIn0.XUxaD3X8lqC436-GHVrUVUEd6uXG3T4_hTrrBaxF11w" alt="Montessori Collective logo" loading="lazy" />
+        <span>Montessori Collective</span>
       </a>
       <nav class="primary-nav" aria-label="Primary">
         <a href="https://montessoricollective.podia.com/about">About</a>
         <a href="https://www.montessori-collective.org/ckla">Science of Reading</a>
         <a href="https://www.montessori-collective.org/products">Resources</a>
         <a href="https://www.montessori-collective.org/blog">Blog</a>
-        <a class="nav-donate" href="https://donate.montessori-collective.org/" target="_blank" rel="noopener">Donate</a>
+        <a class="nav-donate" href="https://www.coloradogives.org/donate/Montessori-Collective" target="_blank" rel="noopener">Donate</a>
         <a href="mailto:info@montessori-collective.org">Contact</a>
         <a class="nav-login" href="https://www.montessori-collective.org/login">Log In</a>
       </nav>
