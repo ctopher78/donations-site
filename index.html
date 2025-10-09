@@ -129,9 +129,28 @@
     .hero {
       background: var(--color-accent);
       color: #fff;
-      padding: clamp(3rem, 8vw, 5.5rem) 0;
+      padding: clamp(2.25rem, 6vw, 4.5rem) 0;
       position: relative;
       overflow: hidden;
+    }
+
+    .hero-media {
+      position: relative;
+      z-index: 1;
+      border-radius: 24px;
+      overflow: hidden;
+      margin-bottom: clamp(1.25rem, 4vw, 2rem);
+      box-shadow: 0 18px 35px rgba(13, 22, 27, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.08);
+      height: clamp(220px, 48vw, 380px);
+    }
+
+    .hero-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .hero::after {
@@ -146,7 +165,7 @@
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 720px;
+      max-width: none;
     }
 
     .hero-preheading {
@@ -167,9 +186,9 @@
     }
 
     .hero p {
-      margin: 0 0 2rem;
+      margin: 0 0 1.25rem;
       font-size: 1.1rem;
-      max-width: 40ch;
+      max-width: none;
     }
 
     .button {
@@ -292,6 +311,10 @@
         width: min(100% - 2rem, var(--max-width));
       }
 
+      .hero .container {
+        width: min(100% - 2rem, 1280px);
+      }
+
       .hero p {
         font-size: 1rem;
       }
@@ -313,7 +336,7 @@
         <a href="https://www.montessori-collective.org/ckla">Science of Reading</a>
         <a href="https://www.montessori-collective.org/products">Resources</a>
         <a href="https://www.montessori-collective.org/blog">Blog</a>
-        <a class="nav-donate" href="https://donate.montessori-collective.org/">Donate</a>
+        <a class="nav-donate" href="https://donate.montessori-collective.org/" target="_blank" rel="noopener">Donate</a>
         <a href="mailto:info@montessori-collective.org">Contact</a>
         <a class="nav-login" href="https://www.montessori-collective.org/login">Log In</a>
       </nav>
@@ -321,19 +344,22 @@
   </header>
 
   <section class="hero">
-    <div class="container hero-content">
-      <p class="hero-preheading">Support our mission</p>
-      <h1>Joy. Curiosity. Liberation. You Make it Happen</h1>
-      <p>
-        Do you remember the curiosity of childhood? The joy of discovery? 
-        Your compassion fosters that joy for children in underserved communities.  
-        Traditional classrooms can suppress and stifle children’s natural curiosity. Montessori classrooms liberate their potential. 
-        You can forever alter a child’s trajectory by bringing a tuition-free Montessori classroom to their neighborhood public school. In a world that feels chaotic, you can protect the time of childhood.
-        Will you join us in creating more public Montessori classrooms that bring joy, curiosity, and empowerment to children? A gift of any amount will help nurture a child’s potential. Let’s revolutionize education together.
-
-        Thank you for believing in every child’s potential!
-      </p>
-      <a class="button" href="#donate">Support our Work</a>
+    <div class="container">
+      <div class="hero-media">
+        <img src="donation_image.png" alt="Montessori educator gathering with children in a bright classroom" />
+      </div>
+      <div class="hero-content">
+        <p class="hero-preheading">Support our mission</p>
+        <h1>Joy. Curiosity. Liberation. You Make it Happen</h1>
+        <p>Do you remember the curiosity of childhood? The joy of discovery? Your compassion fosters that joy for children in
+          underserved communities.</p>
+        <p>Traditional classrooms can suppress and stifle children’s natural curiosity. Montessori classrooms liberate their potential.</p>
+        <p>You can forever alter a child’s trajectory by bringing a tuition-free Montessori classroom to their neighborhood public
+          school. In a world that feels chaotic, you can protect the time of childhood.</p>
+        <p>Will you join us in creating more public Montessori classrooms that bring joy, curiosity, and empowerment to children? A
+          gift of any amount will help nurture a child’s potential. Let’s revolutionize education together.</p>
+        <p>Thank you for believing in every child’s potential!</p>
+      </div>
     </div>
   </section>
 
