@@ -103,6 +103,7 @@
     }
 
     .primary-nav .nav-donate {
+      margin-left: auto;
       padding: 0.55rem 1.25rem;
       background-color: var(--color-accent);
       color: #fff;
@@ -260,6 +261,24 @@
       color: var(--color-accent);
     }
 
+    .impact-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      background-color: var(--color-surface);
+      border-radius: 18px;
+      padding: clamp(1.25rem, 3vw, 2rem);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 35px 55px -20px rgba(13, 22, 27, 0.15);
+    }
+
+    .impact-gallery img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 18px 35px rgba(13, 22, 27, 0.12);
+    }
+
     .donation-card a {
       color: var(--color-accent);
       font-weight: 600;
@@ -354,9 +373,9 @@
         <a href="https://www.montessori-collective.org/ckla">Science of Reading</a>
         <a href="https://www.montessori-collective.org/products">Resources</a>
         <a href="https://www.montessori-collective.org/blog">Blog</a>
-        <a class="nav-donate" href="https://donate.montessori-collective.org/" target="_blank" rel="noopener">Donate</a>
         <a href="mailto:info@montessori-collective.org">Contact</a>
-        <a class="nav-login" href="https://www.montessori-collective.org/login">Log In</a>
+        <a href="https://donate.montessori-collective.org/" target="_blank" rel="noopener">Donate</a>
+        <a class="nav-donate" href="https://www.montessori-collective.org/login">Log In</a>
       </nav>
     </div>
   </header>
@@ -367,7 +386,7 @@
         <img src="donation_image.png" alt="Montessori educator gathering with children in a bright classroom" />
       </div>
       <div class="hero-content">
-        <h1>Joy. Curiosity. Liberation. You Make it Happen</h1>
+        <h1>Joy. Curiosity. Liberation. You Make it Happen.</h1>
         <p>Do you remember the curiosity of childhood? The joy of discovery? Your compassion fosters that joy for children in
           underserved communities.</p>
         <p>Traditional classrooms can suppress and stifle children’s natural curiosity. Montessori classrooms liberate their potential.</p>
@@ -385,13 +404,16 @@
       <div class="donation-card">
         <h2>Make a Donation</h2>
         <p>
-          Give today to uplift Montessori educators and communities. Every gift helps us create and distribute
-          beautiful, accessible materials.
+          Yes, I am passionate about bringing joy, curiosity, and liberation to children in underserved communities.
         </p>
         <div id="MC-donation-form"></div>
         <p class="donation-followup">
           <a href="https://www.montessori-collective.org/about">Learn more about how your kindness brings Montessori classrooms to underserved communities.</a>
         </p>
+      </div>
+      <div class="impact-gallery" aria-label="Examples of how your donation supports Montessori classrooms">
+        <img src="Your Impact 1 - For Donation Page.png" alt="Infographic highlighting the impact of community donations on Montessori classrooms" loading="lazy" />
+        <img src="Your Impact 2 - For Donation Page.png" alt="Infographic showing program outcomes funded through Montessori Collective donations" loading="lazy" />
       </div>
     </div>
   </main>
